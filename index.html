@@ -12,34 +12,84 @@
 </head>
 <body>
 <div class="wrapper">
-	<header class="item header bg__blue">
+	<header class="item header bg__blue header--grid p-1">
+		<div class="navigator">
+			<a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Ticketeg Menu">
+				<span class="te__menu">Ticketeg</span>
+				<span class="fa fa-bars"></span>
+			</a>
+			<nav class="nav" id="main-menu">
+				<a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
+						<span class="sr-only">Close main menu</span>
+						<span class="fa fa-close" aria-hidden="true"></span>
+					</a>
+
+					<ul>
+						<button class="btn btn--primary">Organizas eventos</button>
+						<li><a href="#">Eventos</a></li>
+						<li><a href="#">Contacto</a></li>
+					</ul>
+					<a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+				</nav>
+		</div>
 		<div class="">
 			<img src="assets/img/logo.svg" alt="" class="header_logo">
 		</div>
+		<div class="social">
+			<a href="#"><i class="fab fa-facebook-f"  aria-hidden="true"></i></a>
+			<a href="#"><i class="fab fa-twitter"  aria-hidden="true"></i></a>
+			<a href="#"><i class="fab fa-instagram"  aria-hidden="true"></i></a>
+			<a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
 
-		<a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Ticketeg Menu">
-			<span class="te__menu">Ticketeg</span>
-			<span class="fa fa-bars"></span>
-		</a>
-		<nav class="nav" id="main-menu">
-			<a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
-				<span class="sr-only">Close main menu</span>
-				<span class="fa fa-close" aria-hidden="true"></span>
-			</a>
-
-			<ul>
-				<button class="btn btn--primary">Organizas eventos</button>
-				<li><a href="#">Eventos</a></li>
-				<li><a href="#">Contacto</a></li>
-			</ul>
-			<a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
-		</nav>
+		</div>
 	</header>
+	<!-- FEATURE -->
+	<section class="item feature bg__ligthblue feature--list p-1">
+		<div class="feature--item">A</div>
+		<div class="feature--item">B</div>
+		<div class="feature--item">C</div>
+		<div class="feature--item">D</div>
+		<div class="feature--item">E</div>
+	</section>
+	<!-- CONTENT -->
 	<section class="item container">
 		content
 	</section>
-	<footer class="item footer">
-		footer
+	<!-- FOOTER -->
+	<footer class="item footer bg__blue p-1 footer--grid">
+		<div class="ticketeg__info">
+			TICKETEG es la marca más grande en producción de tickets, software y herramientas para la organización de eventos públicos y privados en Bolivia.
+		</div>
+		<div class="ticketeg__about">
+			<h2>Conocenos</h2>
+			<ul>
+				<li><a href="#">Acerca de nosotros</a></li>
+				<li><a href="#">Nuestros productos</a></li>
+				<li><a href="#">Compra con Multipagos</a></li>
+			</ul>
+		</div>
+		<div class="ticketeg__contact">
+			<h2>¿Eres organizador?</h2>
+			<ul>
+				<li><a href="#">Nuestro servicios</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</div>
+		<div class="ticketeg__social">
+			<div class="social">
+				<a href="#"><i class="fab fa-facebook-f"  aria-hidden="true"></i></a>
+				<a href="#"><i class="fab fa-twitter"  aria-hidden="true"></i></a>
+				<a href="#"><i class="fab fa-instagram"  aria-hidden="true"></i></a>
+				<a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+
+			</div>
+		</div>
+		<div class="ticketeg__payments">
+			
+		</div>
+		<div class="ticketeg__copy">
+			Santa Cruz de la Sierra, Bolivia - © Ticketeg 2019
+		</div>
 	</footer>
 </div>
 </body>

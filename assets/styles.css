@@ -49,23 +49,31 @@
 		background: #EB5029
 	}
 	
+.p-1{
+	padding: 1.5rem
+}
+
 
 	.wrapper {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-rows: repeat(4, autofill);
 		grid-template-areas: 
 		"header"
+		"feature"
 		"container"
 		"footer"
 	}
 /*  ++++++++++++ HEADER ++++++++++++++*/
 .header{
 	grid-area: header;
-	padding: .5rem;
-	height: 80px;
+	padding-bottom: 0;
 }
-
+	.header--grid{
+		display: grid;
+		grid-template-columns: 1.5rem 2fr 1fr;
+		grid-gap: .5rem
+	}
 .header_logo {
 	width: auto;
 	height: 50px
@@ -177,12 +185,55 @@
 	  }
 	}
 
-
+.feature {
+	grid-area: feature;
+}
+	.feature--list{
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-gap: 1.5rem;
+	}
+	.feature--item{
+		background: peru;
+	}
 .container {
 		grid-area: container;
 		background: peru
 	}
+
+/* +++++++++++++++++++
+     pie de pagina
++++++++++++++++++++++++*/
 .footer {
 		grid-area: footer;
-		background: red;
+	}
+	.footer--grid{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(3, autofill);
+		grid-template-areas: 
+		"ticketeg__info ticketeg__about ticketeg__contact ticketeg__social" 
+		"ticketeg__payments ticketeg__payments ticketeg__payments ticketeg__payments" 
+		"ticketeg__copy ticketeg__copy ticketeg__copy ticketeg__copy"
+	}
+	.ticketeg__info{
+		grid-area: ticketeg__info
+	}
+	.ticketeg__about{
+		grid-area: ticketeg__about
+	}
+	.ticketeg__contact{
+		grid-area: ticketeg__contact
+	}
+	.ticketeg__social{
+		grid-area: ticketeg__social
+	}
+	.ticketeg__payments{
+		grid-area: ticketeg__payments
+	}
+	.ticketeg__copy{
+		grid-area: ticketeg__copy;
+		font-size: .75rem;
+		text-align: center;
+		font-style: italic;
 	}
