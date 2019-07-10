@@ -9,7 +9,8 @@
 	}
 
 	a {
-		color: #296d9e
+		color: #296d9e;
+		text-decoration: none;
 	}
 
 
@@ -21,6 +22,9 @@
 	background: #15375a;
 	color: white;
 }
+	.bg__blue a, .bg__ligthblue {
+		color: white
+	}
 .bg__ligthblue {
 	background: #296d9e
 }
@@ -48,11 +52,21 @@
 	.btn--danger {
 		background: #EB5029
 	}
-	
+/*padding*/
 .p-1{
 	padding: 1.5rem
 }
+/*@media (min-width: 1200px){
+	.p-1{
+		padding: 8rem
+	}
+}*/
 
+.list__none {
+	list-style: none;
+	padding: 0;
+	line-height: 1.8rem
+}
 
 	.wrapper {
 		display: grid;
@@ -67,6 +81,7 @@
 /*  ++++++++++++ HEADER ++++++++++++++*/
 .header{
 	grid-area: header;
+	padding-top: 0;
 	padding-bottom: 0;
 }
 	.header--grid{
@@ -184,7 +199,18 @@
 	    position: fixed;
 	  }
 	}
-
+/* ++++++++++++ ++++++++++
+			Social
++++++++++++++++++++++++++*/
+.social{
+	text-align: center;
+}
+	.social a {
+		margin-left: .8rem
+	}
+/* ++++++++++++ ++++++++++
+			Feature
++++++++++++++++++++++++++*/
 .feature {
 	grid-area: feature;
 }
@@ -198,7 +224,6 @@
 	}
 .container {
 		grid-area: container;
-		background: peru
 	}
 
 /* +++++++++++++++++++
@@ -206,13 +231,16 @@
 +++++++++++++++++++++++*/
 .footer {
 		grid-area: footer;
+		padding-top: 1rem;
+		padding-bottom: 1rem; 
 	}
 	.footer--grid{
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: repeat(3, autofill);
+		grid-gap: 2rem;
 		grid-template-areas: 
-		"ticketeg__info ticketeg__about ticketeg__contact ticketeg__social" 
+		"ticketeg__info ticketeg__info ticketeg__about ticketeg__contact" 
 		"ticketeg__payments ticketeg__payments ticketeg__payments ticketeg__payments" 
 		"ticketeg__copy ticketeg__copy ticketeg__copy ticketeg__copy"
 	}
@@ -229,7 +257,9 @@
 		grid-area: ticketeg__social
 	}
 	.ticketeg__payments{
-		grid-area: ticketeg__payments
+		grid-area: ticketeg__payments;
+		display: inline-block;
+		text-align: center;
 	}
 	.ticketeg__copy{
 		grid-area: ticketeg__copy;
