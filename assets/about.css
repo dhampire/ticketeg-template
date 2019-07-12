@@ -1,0 +1,49 @@
+.content-about{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(5, auto);
+}
+
+.about__head{
+	  background:
+    /* top, transparent red, faked with gradient */ 
+linear-gradient(to right, rgb(29, 151, 108, .9), rgb(147, 249, 185, .9)),
+    /* bottom, image */
+    url(https://static.coindesk.com/wp-content/uploads/2017/04/analysis-charts-e1493382374824-860x430.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+	grid-column: 1 / span 6;
+	height: 60vh;
+	padding-top: 20vh
+
+}
+
+.content--about{
+}
+.about__intro--img{
+	background: url('https://www.xiarch.com/images/services/applicationsecurity.png') no-repeat center center / 65%;
+	/*background: url('https://www.mendix.com/wp-content/uploads/blog-integrations-header@2x-8.png') no-repeat center center / cover;*/
+	grid-column: 1 / span 3;
+}
+.about__intro{
+	align-items: center;
+  	justify-content: center;
+	width: 80%;
+	grid-column: 4 /span 3;
+	height:60vh;
+	margin: 0 auto;
+	padding-top:  20vh
+	
+}
+.about__vendidos{
+	grid-column: 1 / span 6;
+	height: 80vh;
+	padding-top: 5vh;
+	background: rgba(155, 155,155), url('https://cdn-asset-mel-1.airsquare.com/www/library/image/illustration/people-tickets-green.png') no-repeat center bottom / 30%;
+}
+
+.about__about__vendidos--inner{
+	width: 80%;
+	margin:0 auto;
+}

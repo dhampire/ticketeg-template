@@ -86,6 +86,14 @@
 	line-height: 1.8rem
 }
 
+.m-5-auto{
+	margin: 5rem auto;
+}
+
+/*colores*/
+.white{
+	color: white !important;
+}
 /*Wrapper*/
 
 .wrapper {
