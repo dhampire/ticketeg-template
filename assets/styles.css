@@ -6,6 +6,7 @@
 		font-size: 16px;
 		font-family: sans-serif;
 		line-height: 1.4rem;
+		font-family: 'Raleway', sans-serif;
 	}
 
 	a {
@@ -13,7 +14,9 @@
 		text-decoration: none;
 	}
 
-
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Oxygen', sans-serif;
+	}
 /***************************************************
 				GENERALES
 *****************************************************/
@@ -42,8 +45,9 @@
 }
 	.btn--small{
 		padding: .5rem .5rem;
-		font-size: .75rem;
-		display: inline;
+		font-size: .85rem;
+		text-transform: uppercase;
+		margin-left: 2rem
 	}
 	.btn--primary{
 		background: #80D013;
@@ -58,10 +62,14 @@
 		background: #EB5029
 	}
 	.btn--gray {
-		background: #ccc;
+		background: #aaa;
 		color:white;
 	}
 
+/*textos*/
+.text-center{
+	text-align: center;
+}
 /*padding*/
 .p-1{
 	padding: 1.5rem
@@ -78,13 +86,16 @@
 	line-height: 1.8rem
 }
 
+/*Wrapper*/
+
 .wrapper {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: repeat(4, autofill);
+	grid-template-rows: repeat(5, autofill);
 	grid-template-areas: 
 	"header"
 	"feature"
+	"cta"
 	"container"
 	"footer"
 	}
@@ -228,6 +239,20 @@
 	.social a {
 		margin-left: .8rem
 	}
+
+	/* ++++++++++++++++
+			CTA
+	+++++++++++++++++*/
+.cta {
+	grid-area: cta;
+	width: 90%;
+	margin: 20vh auto;
+}
+	.cta__text{
+		font-size: 1.5rem;
+		font-weight: 200;
+		color: #a0a0a0
+	}
 /* ++++++++++++ ++++++++++
 			Feature
 +++++++++++++++++++++++++*/
@@ -235,16 +260,34 @@
 	grid-area: feature;
 	padding-top: 5rem;
 	padding-bottom: 5rem;
+	background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+
 }
-	.feature--list{
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		grid-gap: 1.5rem;
+	.feature--item {
+		margin: 0 1rem;
+		position: relative;
 	}
-	.feature--item{
-		border-radius: .45rem
-		background: peru;
+	.feature--item img{
+		border-radius: .45rem;
 	}
+/* ++++++++++++++
+ 					Glider   
+  						 	+++++++++++++*/
+
+	    .glider-contain {
+            width: 90%;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .glider-slide {
+            min-height: 150px;
+        }
+        .glider-slide img {
+            width: 100%;
+        }
+        .glider-next, .glider-prev {
+			color: white !important;
+        }
 .container {
 		background: #f2f2f2;
 		grid-area: container;
@@ -267,13 +310,19 @@
 	grid-gap: 2rem;
 }
 
+	.evento__title{
+		display: inline-block;
+	}
+		.event__button {
+			display: inline-block;
+		}
 	.event__head{
 		grid-column-start: 1;
 		grid-column-end: 5
 	}
 	.event__card{
 		border-radius: 0.45rem;
-		border: 1px solid #ccc;
+		box-shadow: 0 2px 0 #E8E8E8;
 	}
 		.event__info{
 			padding: .5rem
@@ -307,6 +356,7 @@
 +++++++++++++++++++++++*/
 .footer {
 		grid-area: footer;
+		background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
 	}
 	.footer__logo {
 		width: 180px;
@@ -338,6 +388,9 @@
 		grid-area: ticketeg__payments;
 		display: inline-block;
 		text-align: center;
+	}
+	.ticketeg__payments i {
+		margin: 0 0.5rem;
 	}
 	.ticketeg__copy{
 		grid-area: ticketeg__copy;
