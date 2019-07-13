@@ -40,10 +40,34 @@ linear-gradient(to right, rgb(29, 151, 108, .9), rgb(147, 249, 185, .9)),
 	grid-column: 1 / span 6;
 	height: 80vh;
 	padding-top: 5vh;
-	background: rgba(155, 155,155), url('https://cdn-asset-mel-1.airsquare.com/www/library/image/illustration/people-tickets-green.png') no-repeat center bottom / 30%;
+	background-image: url('https://cdn-asset-mel-1.airsquare.com/www/library/image/illustration/people-tickets-green.png');
+	background-color: rgba(102,102,102,0.1);
+	background-repeat: no-repeat;
+	background-size: 30%;
+	background-position: center bottom;
 }
 
 .about__about__vendidos--inner{
 	width: 80%;
 	margin:0 auto;
 }
+
+.about__tickets{
+	grid-column: 4 / span 6;
+	padding: 6rem 1rem;
+	
+}
+.about__tickets__img{
+	grid-column: 1 / span 3;
+	background: url('https://uploads-ssl.webflow.com/5b60d33da351717b852fe227/5c41fc943b33dd796389bb8b_Illustrations_Create%20Event.svg');
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: center;
+}
+	.bg__about{
+	background: #cb2d3e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	
+	}
