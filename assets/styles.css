@@ -136,6 +136,7 @@
 .sticky {
   position: fixed;
   width: 100vw;
+  z-index: 9999;
   top: 0;
 }
 
