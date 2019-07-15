@@ -406,6 +406,12 @@
 					bottom: 5%;
 					left: 10%;
 				}
+				@media (max-width: 480px) {
+					.btn--card{
+						font-size: .85rem;
+						padding: 1rem .5rem;
+					}
+				}
 /* +++++++++++++++++++
      pie de pagina
 +++++++++++++++++++++++*/
