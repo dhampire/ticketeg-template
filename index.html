@@ -18,7 +18,8 @@
 
 <body>
     <div class="wrapper">
-        <header class="item header bg__blue header--grid p-1 wrapper--inner">
+        <!-- header -->
+        <header id="navbar" class="item header bg__blue header--grid p-1 wrapper--inner">
             <div class="navigator">
                 <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Ticketeg Menu">
                     <span class="te__menu">Ticketeg</span>
@@ -43,6 +44,12 @@
                     <img src="assets/img/logo.svg" alt="" class="header_logo">
                 </a>
             </div>
+            <div class="header__cta">
+                <a href="#about.html" class="btn btn--danger">
+                    ¿Organizas eventos?
+                </a>
+            </div>
+            <!-- social -->
             <div class="social">
                 <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                 <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
@@ -312,4 +319,19 @@
             </div>
         </footer>
     </div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 </body>

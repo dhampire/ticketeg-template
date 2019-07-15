@@ -123,7 +123,7 @@
 }
 	.header--grid{
 		display: grid;
-		grid-template-columns: 1.5rem 2fr 1fr;
+		grid-template-columns: 1.5rem 2fr 1fr 1fr;
 		grid-gap: .5rem;
 		align-items: center;
 		justify-content: center;
@@ -131,6 +131,12 @@
 .header_logo {
 	width: auto;
 	height: 50px
+}
+
+.sticky {
+  position: fixed;
+  width: 100vw;
+  top: 0;
 }
 
 /* 
@@ -253,7 +259,6 @@
 	+++++++++++++++++*/
 .cta {
 	grid-area: cta;
-	width: 90%;
 	margin: 20vh auto;
 }
 	.cta__text{
