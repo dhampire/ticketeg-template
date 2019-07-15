@@ -3,7 +3,11 @@
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: repeat(5, auto);
 }
-
+@media (max-width: 480px) {
+	.content-about{
+		grid-template-columns: 1fr;
+	}
+}
 .about__head{
 	  background:
     /* top, transparent red, faked with gradient */ 
@@ -23,9 +27,9 @@ linear-gradient(to right, rgb(29, 151, 108, .9), rgb(147, 249, 185, .9)),
 }
 .about__intro--img{
 	background: url('https://www.xiarch.com/images/services/applicationsecurity.png') no-repeat center center / 65%;
-	/*background: url('https://www.mendix.com/wp-content/uploads/blog-integrations-header@2x-8.png') no-repeat center center / cover;*/
 	grid-column: 1 / span 3;
 }
+
 .about__intro{
 	align-items: center;
   	justify-content: center;
@@ -71,3 +75,10 @@ background: linear-gradient(to top, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Fir
 
 	
 	}
+
+
+@media (max-width: 480px) {
+	.about__intro--img, .about__tickets__img, .about__tickets, .about__vendidos, .about__intro{
+		grid-column: 1 ;
+	}
+}
