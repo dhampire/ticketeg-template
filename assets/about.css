@@ -82,3 +82,47 @@ background: linear-gradient(to top, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Fir
 		grid-column: 1 ;
 	}
 }
+
+
+/********************** *****************************
+
+PAGE EVENTS 
+
+*****************************************************/
+.page__details{
+	position: relative;
+}
+.page__thumb{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+	.page__thumb:after{
+		content: " ";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		
+		background-image: linear-gradient( 107deg,  rgba(2,108,223,.3) 27.4%, rgba(0,255,255,1) 92.7% );	}
+.event__page__details {
+	position: absolute;
+	bottom:  3.5rem;
+	width: 100%
+}
+.event__page__title{
+	font-size: 2.8rem;
+	color: white;
+}
+.event__page__date{
+	color: #efefef;
+}
+
+.event__share{
+	display: inline-block;
+}
+
+.event__page__text{
+
+}
