@@ -129,6 +129,14 @@
 		justify-content: center;
 	}
 
+		@media (max-width: 480px){
+			.header--grid{
+				grid-template-columns: 1.5rem 1fr 1fr;
+				grid-gap: 0;
+			}
+			.header__cta{display: none;}
+
+		}
 .header_logo {
 	width: auto;
 	height: 50px
@@ -140,15 +148,14 @@
   z-index: 9999;
   top: 0;
 }
-		@media (max-width: 480px){
-			.header--grid{
-				grid-template-columns: 1.5rem 1fr 1fr;
-			}
-			.header__cta{display: none;}
-			.sticky{
-				width: 100%
-			}
-		}
+@media (max-width: 480px){
+	.sticky{
+		width: 100%;
+	}
+	/*.social {
+		display: none;
+	}*/
+}
 /* 
 	+++++++++++++++ 
 	NAV
