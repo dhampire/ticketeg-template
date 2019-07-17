@@ -306,11 +306,11 @@
 
 }
 
-@media (max-width: 480px){
+/*@media (max-width: 480px){
 	.feature{
 		display: none
 	}
-}
+}*/
 	.feature--item {
 		margin: 0 1rem;
 		position: relative;
@@ -322,20 +322,25 @@
  					Glider   
   						 	+++++++++++++*/
 
-	    .glider-contain {
-            width: 90%;
-            max-width: 1280px;
-            margin: 0 auto;
-        }
-        .glider-slide {
-            min-height: 150px;
-        }
-        .glider-slide img {
-            width: 100%;
-        }
-        .glider-next, .glider-prev {
-			color: white !important;
-        }
+	.carousel {
+
+	}
+
+	.carousel-cell {
+	  width: 15%;
+	  height: 300px;
+	  margin-right: 2rem;
+	  border-radius: 5px;
+	}
+
+
+	@media (max-width: 480px){
+		.carousel-cell {
+			width: 70%;
+		}
+	}
+
+/* container */ 
 .container {
 		background: #f2f2f2;
 		grid-area: container;
@@ -414,12 +419,14 @@
 				.btn--card{
 					position: absolute;
 					bottom: 5%;
-					left: 10%;
+					display: block;
+					width: 90%;
+					left: 7%
 				}
 				@media (max-width: 480px) {
 					.btn--card{
 						font-size: .85rem;
-						padding: 1rem .5rem;
+						padding: .5rem;
 					}
 				}
 /* +++++++++++++++++++
