@@ -342,8 +342,15 @@
 	  margin-right: 2rem;
 	  border-radius: 5px;
 	}
-
-
+	@media (max-width: 980px){
+	.carousel-cell {
+			width: 30%;
+		}
+	.btn--card{
+						font-size: .85rem;
+						padding: .5rem;
+					}
+	}
 	@media (max-width: 480px){
 		.carousel-cell {
 			width: 70%;
